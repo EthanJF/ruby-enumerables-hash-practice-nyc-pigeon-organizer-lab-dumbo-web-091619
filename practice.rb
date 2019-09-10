@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
       value2.each do |pigeon|
         if !pigeon_list[pigeon]
           pigeon_list[pigeon] = {}
-        else
+        end
+        if
           pigeon_list[pigeon][key1] = []
         end
         pigeon_list[pigeon][key1] << value2.to_s
