@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
         else
           pigeon_list[pigeon][key1] = []
         end
+        pigeon_list[pigeon][key1]
       end
     end
   end
