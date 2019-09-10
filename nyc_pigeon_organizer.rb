@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
     value1.each_pair do |key2,value2|
       value2.each do |pigeon|
         if !pigeon_list[pigeon]
-          pigeon_list[pigeon] = {key1 => ["#{key2}"]}
-        # else
-        #   pigeon_list[pigeon][key1].push key2
+          pigeon_list[pigeon] = {}
+        else
+          pigeon_list[pigeon][key1] = []
         end
       end
     end
